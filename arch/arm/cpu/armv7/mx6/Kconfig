@@ -196,6 +196,13 @@ config TARGET_MX6Q_ICORE_RQS
 	select DM_THERMAL
 	select SUPPORT_SPL
 
+config TARGET_PISTACHIO_LITE
+	bool "pistachio-lite"
+	select BOARD_LATE_INIT
+	select DM
+	select DM_THERMAL
+	select BOARD_EARLY_INIT_F
+
 config TARGET_MX6QSABREAUTO
 	bool "mx6qsabreauto"
 	select BOARD_LATE_INIT
@@ -500,6 +507,7 @@ source "board/freescale/mx6ul_14x14_lpddr2_arm2/Kconfig"
 source "board/freescale/mx6ullevk/Kconfig"
 source "board/freescale/mx6ull_ddr3_arm2/Kconfig"
 source "board/grinn/liteboard/Kconfig"
+source "board/nutsboard/pistachio-lite/Kconfig"
 source "board/phytec/pcm058/Kconfig"
 source "board/gateworks/gw_ventana/Kconfig"
 source "board/kosagi/novena/Kconfig"
